@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo 'Git Clone'
                 git url: 'https://github.com/darkknightghost/spring-petclinic.git',
-                branch: 'wavefront', credentialsId: 'github_access_token'
+                branch: 'wavefront', credentialsId: 'jenkins_token'
             }
             post {
                 success {
